@@ -154,15 +154,29 @@ body {
   color: var(--accent-color);
 }
 
+.heder-link-svg {
+  fill: #757575;
+}
+
+.header-tel-link:hover .heder-link-svg,
+.header-tel-link:focus .heder-link-svg,
+.header-mail-link:hover .heder-link-svg,
+.header-mail-link:focus .heder-link-svg {
+  fill: #2196f3;
+}
+
 /*==========ГЕРОЙ=============*/
 
 .hero {
+  display: block;
+  width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
-
-  background: var(--dark-background-color);
-
+  padding-left: 452px;
+  padding-right: 452px;
   text-align: center;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/studio/hero/bg.jpg");
 }
 
 .hero-title {
@@ -415,11 +429,13 @@ body {
   background-color: #fff;
 }
 
-.social-list-link:hover {
+.social-list-link:hover,
+.social-list-link:focus {
   background-color: var(--accent-color);
 }
 
-.social-list-link:hover .social-list-svg {
+.social-list-link:hover .social-list-svg,
+.social-list-link:focus .social-list-svg {
   fill: #fff;
 }
 
@@ -470,6 +486,7 @@ body {
 }
 
 .footer .container {
+  display: flex;
   padding-left: 0px;
   padding-right: 0px;
 }
@@ -508,6 +525,54 @@ body {
 .footer-mail-link:hover,
 .footer-mail-link:focus {
   color: var(--accent-color);
+}
+
+.footer-social-list {
+  margin-left: 70px;
+}
+
+.footer-subtitle {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer-social-list .social-list {
+  display: flex;
+}
+
+.footer-social-list .social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-social-list .social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-list .social-list-link:hover,
+.footer-social-list .social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-list .social-list-link:hover .social-list-svg,
+.footer-social-list .social-list-link:f .social-list-svg {
+  fill: #fff;
+}
+
+.footer-social-list .social-list-svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
 }
 
 /*=======ПОРТФОЛИО========*/
@@ -600,6 +665,11 @@ body {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
-
   text-align: start;
+}
+
+.card:hover,
+.card:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
