@@ -565,7 +565,7 @@ body {
 }
 
 .footer-social-list .social-list-link:hover .social-list-svg,
-.footer-social-list .social-list-link:f .social-list-svg {
+.footer-social-list .social-list-link:focus .social-list-svg {
   fill: #fff;
 }
 
